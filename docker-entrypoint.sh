@@ -24,6 +24,7 @@ if [ ! -f ".env" ]; then
       DB_DATABASE=${DB_DATABASE:-bookstack}
       DB_USERNAME=${DB_USERNAME:-bookstack}
       DB_PASSWORD=${DB_PASSWORD:-password}
+      MYSQL_ATTR_SSL_CA="/etc/ssl/certs/Baltimore_CyberTrust_Root.pem"
 
       # Cache and session
       CACHE_DRIVER=file

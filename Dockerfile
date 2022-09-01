@@ -62,6 +62,7 @@ RUN set -x; \
 
 COPY php.ini /usr/local/etc/php/php.ini
 COPY docker-entrypoint.sh /bin/docker-entrypoint.sh
+COPY database.php /var/www/bookstack/app/Config/database.php
 
 WORKDIR /var/www/bookstack
 
